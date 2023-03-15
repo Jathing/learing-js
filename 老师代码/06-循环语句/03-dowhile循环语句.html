@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    //    while:不满足条件一次也不会执行
+    //    do while：至少执行一次
+    // 语法
+    // do{
+    //     // 循环体
+    // }while(条件)
+
+    // 密码是123456  如果密码输入错误，需要重新输入，输入正确可以进入网页
+    // var pwd;
+    // do{
+    //     pwd = +prompt('请输入密码')
+    // }while(pwd != 12345)
+
+    // alert('欢迎进入此网页')
+
+    // while写法
+    var pwd = +prompt('请输入密码');
+    while(pwd!== 123456){
+        pwd = +prompt('请输入密码');
+    }
+    alert('欢迎进入此网页')
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

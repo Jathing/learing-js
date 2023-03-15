@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // toLowerCase()：将所有的字符转成小写；
+        // toUpperCase() ：将所有的字符转成大写；
+
+        // 和数组不一样，字符串不可以被重新赋值
+        // 错误方式
+        var str1 = "hello";
+        str1[4] = "O";
+        console.log(str1);
+
+        var str2 = "HELLO";
+        var str3 = "hello";
+        console.log(str2.toLowerCase());//大写转小写
+        console.log(str3.toUpperCase());//小写转大写
+
+        console.log(str3[0].toUpperCase());
+        // 没有办法改变原字符串，需要重新赋值到变量上
+        console.log(str3);
+
+
+       
+    </script>
+</body>
+</html>

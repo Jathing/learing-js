@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // （附加）编写一个函数，该函数有2个参数，该函数功能是将作为第一个参数的字符串从头开始截取第二个参数位数，并将截取的字符串返回
+    // （进阶）编写一个函数，如果使用的时候输入两个参数，则和上题功能一致，如果输入三个参数，则从第二个参数的索引位置开始截取，截取长度为第三个参数大小
+    function fn1(str, end) {
+      return str.slice(0, end);
+    }
+    console.log(fn1("哈哈哈哈哈哈", 3))
+
+    // var start = 0;
+    function fn2(str, end, start) {
+      return str.slice(start, end)
+    }
+
+    console.log(fn2("哈哈哈哈哈哈", 3))
+    console.log(fn2("哈哈呵呵呵哈哈哈", 6, 2))
+    console.log(fn2("哈哈呵呵呵哈哈哈", 6))
+
+    // （附加）编写一个函数，该函数有2个参数，该函数功能是将作为第一个参数的字符串从头开始截取第二个参数位数，并将截取的字符串返回
+    // （进阶）编写一个函数，如果使用的时候输入两个参数，则和上题功能一致，如果输入三个参数，则从第二个参数的索引位置开始截取，截取长度为第三个参数大小
+
+    
+
+  </script>
+</body>
+
+</html>

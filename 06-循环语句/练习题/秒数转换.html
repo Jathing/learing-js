@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 给定i一个秒数，换算成多少天多少小时多少分钟多少秒
+    let sec = +prompt("请输入秒数");
+    let day = parseInt(sec / 86400);
+    let hour = parseInt((sec % 86400) / 3600);
+    let min = parseInt((sec % 3600) / 60);
+    let second = sec % 60;
+    console.log(day + "天" + hour + "小时" + min + "分钟" + second + "秒");
+  </script>
+</body>
+
+</html>

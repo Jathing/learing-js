@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    // 对象 是属性的无序集合
+    // 操作的话就是操作对象的集合
+    // CRUD 增删改查
+
+    var obj = {
+            name : "wang",
+            age : 18,
+            isMarry : false,
+            eat : function(){  //eat 在这里是一个方法
+                console.log("eat..");
+            }
+        }
+
+        // 访问属性  查
+        console.log(obj.name);
+        console.log(obj["name"]);
+
+        // 添加属性 增
+        obj.address = "xinxiang";
+        console.log(obj);
+
+        // 修改属性 改
+        obj.name = "lee";
+        console.log(obj);
+
+        // 删除属性 删
+        delete obj.name;
+        console.log(obj);
+        console.log(obj.name); //undefined
+
+
+
+
+    </script>
+</body>
+</html>

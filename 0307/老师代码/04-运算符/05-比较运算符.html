@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 比较运算符（关系运算符）是两个数据进行比较时所使用的运算符，比较运算后，会返回一个布尔值（true / false）作为比较运算的结果。
+        // ==   ===   !=  >   <  >=  <=
+        // 最终的返回值是false true
+        // 比较时，如果不是数字，会隐式转为number类型
+        // 任何数据和NaN比较 都是false
+        // false 会隐式转换为 0   true会隐式转换为1
+        // undefined 会隐式转换为 NaN
+        // null 会隐式转换为0
+
+
+        console.log(1 > 2);  //f
+        console.log(1 > true);  //f   true--1
+        console.log(1 > false);  //t   false --0
+        console.log(1 > null);  //t   null --0
+        console.log(1 > "123");  //f  "123"会转为number123
+        console.log(1 > NaN);  //f 
+        console.log(1 > undefined);  //f  und隐式转换为NaN
+
+        console.log(1 > "a");  //f  a = 97  1>97  ASSiC - 美国的字符编码集
+        console.log("b" > "a");  //true  a = 97  b = 98 
+        console.log("ab" > "ac");  //false   a = 97  b = 98  c = 99  一位一位比较
+
+        console.log(10 >= 20);  //f
+        console.log(10 <= 20);  //t
+
+        // = 赋值
+        // == 相等
+        // === 全等
+
+        // == 相等 不会判断数据类型 或者说 在比较前已经发生了隐式转换 转换成number类型
+        console.log(123 == "123");  //true
+
+        // ===全等  会先比较类型，如果类型不一致，直接返回false
+        console.log(123 === "123");  //false
+
+        // 任何和NaN做比较全是false
+        console.log(NaN === NaN);  //false
+
+        // 不等  !=
+        console.log(1 != 2);  //true
+       
+    </script>
+</body>
+</html>

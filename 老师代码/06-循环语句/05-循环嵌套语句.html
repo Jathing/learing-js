@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    //    语法
+    // for(外部声明记录循环次数的变量; 循环条件; 变化值){
+    //     for(内部声明记录循环次数的变量; 循环条件; 变化值){
+    //         循环体
+    //     }
+    // }
+    for(var i = 1;i <= 3;i++){
+        for(var j = 1;j <= 3;j++){
+            console.log('hello world');
+        }
+    }
+
+    // 打印5行5列的星星矩阵
+        // *****
+        // *****
+        // *****
+        // *****
+        // *****
+        // 外面控制行 里面控制一行几个（列）
+        for(var i = 1;i <= 5;i++){
+            for(var j = 1;j <=5;j++){
+                document.write("*")
+            }
+            document.write('<br>')
+        }
+
+        // 直角三角形
+        for(var i = 1;i <= 5;i++){
+            for(var j = 1;j <= i;j++){
+                document.write("*")
+            }
+            document.write('<br>')
+        }
+
+        // 倒直角三角形
+        for(var i = 1; i <= 5;i++){
+            for(var j = i;j <= 5;j++){
+            // for(var j = 5;j>=i;j--){
+                document.write("*")
+            }
+            document.write('<br>')
+        }
+
+        for(var i = 1;i <= 5;i++){
+            // 打印空格
+            for(var j = 1;j < i;j++){
+                document.write('&nbsp;')
+            }
+            // 打印*
+            for(var j = 5 ; j >= i;j--){
+                document.write("* ")
+            }
+            document.write('<br>')
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

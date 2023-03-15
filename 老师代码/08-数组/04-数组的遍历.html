@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    //    遍历的概念：数组里面的每一个元素进行访问
+    // 1） for循环
+    // 2） for in   --es5
+    // 3） for of  --es6
+    var arr = ["z3","l4","w5","z6"];
+    
+    // 1)for循环
+    for(var i = 0;i < arr.length;i++){
+        console.log(arr[i]);
+    }
+
+    // 2)for in
+    for(var index in arr){
+        // index是索引
+        console.log(arr[index]);
+    }
+
+    // 3)for of
+    for(var item of arr){
+        console.log(item);
+    }
+
+
+    var arr1 = ["a","b","c"];
+    
+    for(var i = 0;i < arr1.length;i++){
+        console.log(arr1[i]);
+    }
+
+    // for in 循环遍历的是数组的索引，再通过索引值获取数组的元素
+    for(var index in arr1){
+        console.log(arr1[index]);
+        console.log(index);
+    }
+
+    // for of 循环遍历的是数组的元素
+    for(var item of arr1){
+        console.log(item);
+    }
+
+
+    // 遍历对象
+    var obj = {
+        // key : value,
+        name : 'wang',
+        age: 18,
+        height :168
+    }
+
+    // for in  循环遍历的是对象的键，再通过键来获取对应的值
+    for(var key in obj){
+        console.log(key,obj[key]);
+    }
+
+    // for of
+    for(var item of obj){
+        console.log(item);  //obj is not iterable  Obj不是可迭代的
+    }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

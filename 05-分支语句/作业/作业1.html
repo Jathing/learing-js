@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //if分支语句 - 东方航空从北京飞往马尔代夫的机票原价为4000元，4到10月份为旺季，其他月份为淡季， 
+    //旺季时候头等舱打9折， 经济舱打7.5折；淡季头等舱打6折，经济舱打3折。输入出行的月份和选择的舱型计算出机票价格
+    var month = prompt("请输入月份");
+    var cabin = prompt("请输入舱型");
+    var price = 4000;
+    if (month >= 4 && month <= 10) {
+      if (cabin == "头等舱") {
+        price *= 0.9;
+      } else if (cabin == "经济舱") {
+        price *= 0.75;
+      }
+    } else {
+      if (cabin == "头等舱") {
+        price *= 0.6;
+      } else if (cabin == "经济舱") {
+        price *= 0.3;
+      }
+    }
+    alert("机票价格为" + price);
+  </script>
+</body>
+
+</html>

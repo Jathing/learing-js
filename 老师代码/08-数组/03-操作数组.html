@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // push 在数组的末尾添加元素 push返回的是新数组的长度
+        // 语法：arr.push('ele')
+        var arr1 = ["a","b","c"];
+        // 之前的写法
+        // arr1[3] = "d";
+
+        // push 推
+        arr1.push("d","e");
+        console.log(arr1);
+
+        // pop 在数组的末尾删除（取出）一个元素
+        // 语法：arr.pop("ele")
+        var res =  arr1.pop();
+        console.log(res);
+        console.log(arr1);
+
+        // unshift 在头部添加一个元素  
+        // unshift返回新数组的长度
+        // 语法：arr.unshift('ele')
+        var arr2 = ["a","b","c"];
+        arr2.unshift("0");
+        var res2 = arr2.unshift("1");
+        
+        // unshift 返回的新数组的长度
+        console.log(res2);//5
+        console.log(arr2);// ['1', '0', 'a', 'b', 'c']
+
+        // shift  在数组中删除头部的元素
+        // 语法：arr.shift();
+        var res3 = arr2.shift();
+        // shift 返回的是被删除的元素
+        console.log(res3);  //1
+        console.log(arr2);  // [ '0', 'a', 'b', 'c']
+
+        // 总结:删除的话整体返回的是被删除的元素(shift pop)  
+        //      添加的话整体返回的是新数组的长度(unshift  push!)
+
+        // splice 在任意位置添加和删除元素
+        // 语法: arr.splice(从几号索引开始，删除几个，添加哪些元素)
+        var arr3 = ["a","b","c"];
+
+        // 不删除任何元素
+        arr3.splice(1,0)
+        console.log(arr3);
+
+        // 从1号索引开始，删除一个元素(删除本身)
+        // arr3.splice(1,1);// ["a","c"]
+        // arr3.splice(1,2);// ["a","c"]
+        // console.log(arr3);//['a'] --是对原数组进行操作
+
+        // 删除返回的是被删除的元素，删除几个返回几个
+        // var res4 = arr3.splice(1,2,"yes")
+        // console.log(res4);
+        // console.log(arr3);
+
+        // 从1号索引开始，删除一个元素，在删除的位置添加两个元素
+        // arr3.splice(1,1,"ok","yes");
+        // console.log(arr3);['a', 'ok', 'yes', 'c']
+
+        // 从2号索引开始，删除0个元素，从2号索引处添加两个元素 e d 
+        // arr3.splice(2,0,"e","d");
+        // console.log(arr3); //['a', 'b', 'e', 'd', 'c']
+
+        // 如果没有删除，整体返回的是[] 空数组 长度为0
+        console.log(arr3.splice(2,0,"e","d"));
+
+        // 添加和删除
+        // 1）push    在数组的尾部添加元素 返回的是新数组的长度
+        // 2）pop     在数组的尾部删除元素 返回的是被删除的元素
+        // 3）unshift 在数组的头部添加元素 返回的是新数组的长度
+        // 4）shift   在数组的头部删除元素 返回的是被删除的元素
+        // 5）splice  在数组中任意位置添加和删除元素
+
+
+        
+
+
+
+
+        
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+       
+    </script>
+</body>
+</html>

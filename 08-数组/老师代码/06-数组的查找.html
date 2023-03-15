@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // indexOf 查找某个元素对应的索引
+        // includes 查找数组是否包含某个元素
+        // find  查找元素
+        // findIndex 查找元素对应的索引  
+    </script>
+<!--     <script>
+        // indexOf 和 lastIndexOf 查找数组的某个元素的索引
+        // 语法：arr.indexOf('ele')
+        var arr1 = ['z3', 'l4', 'w5', 'z6', 't7'];
+        console.log(arr1.indexOf('z3')); //0
+        console.log(arr1.indexOf('t7')); //4
+
+        // 如果元素不在数组中
+        console.log(arr1.indexOf('haha')); //-1
+
+        // indexOf是从前向后找，找到第一个元素之后返回对应的下标值
+        console.log(arr1.indexOf('l4')); //1
+        // lastIndexOf从后向前找 找到第一个元素之后返回对应的下标值
+        console.log(arr1.lastIndexOf('l4'));//1 
+    </script> -->
+   <!--  <script>
+        // includes 查找数组是否包含某个元素
+        // 语法：arr.includes('ele')
+        var arr1 = ['z3', 'l4', 'w5', 'z6', 't7'];
+        // 判断数组中是否包含某个元素，包含的话返回true，不包含返回false
+        console.log(arr1.includes('w5'));//true
+        console.log(arr1.includes('w55'));//false
+    </script> -->
+
+    <script>
+        // find 查找元素
+        // 语法：arr.find(function(item,index,arr){
+
+        // })
+        // item  表示数组中的每一个元素
+        // index 表示每一个元素对应的索引
+        // arr   表示数组
+        // find  自带遍历功能
+        var arr1 = ['z3', 'l4', 'w5', 'z6', 't7'];
+        var res = arr1.find(function(item,index,arr1){
+            console.log(item);
+            console.log(index);
+            console.log(arr1);
+
+            // return item == 'z3'
+            // find找不到元素，将返回undefined
+            return item == 'haha'  //undefined
+        }) 
+        console.log(res);
+    </script>
+</body>
+</html>

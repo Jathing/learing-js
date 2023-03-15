@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1,
+    h2,
+    h3,
+    h4 {
+      display: inline-block;
+    }
+
+    h1 {
+      color: red;
+    }
+
+    h2 {
+      color: orange;
+    }
+
+    h3 {
+      color: yellow;
+    }
+
+    h {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+  <script>
+    // 姓名
+    var uname = prompt("请输入你的姓名:");
+    document.write("<h1>姓名: </h1>" + uname + "<br>");
+    console.log(uname);
+    // 年龄
+    var age = prompt("请输入你的年龄:");
+    document.write("<h2>年龄: </h2>" + age + "岁" + "<br>");
+    console.log(age);
+    // 身高
+    var height = prompt("请输入你的身高:");
+    document.write("<h3>身高: </h3>" + height + "cm" + "<br>");
+    console.log(height);
+    // 体重
+    var weight = prompt("请输入你的体重");
+    document.write("<h4>体重: </h4>" + weight + "kg" + "<br>");
+    console.log(weight);
+
+    console.error = function () { };
+
+  </script>
+</body>
+
+</html>

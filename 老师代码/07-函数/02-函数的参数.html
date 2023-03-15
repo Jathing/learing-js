@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    //    函数的参数，增加函数的 通用性，针对 相同的数据处理逻辑，能够 适应更多的数据：
+    //     形参：声明 函数时，小括号中的参数，是用参来接收数用的，在函数内部 作为变量使用
+    //     实参：调用 函数时，小括号中的参数，是用来把数据传递到 函数内部用的
+
+    // ()
+
+    // 声明函数
+    // 形参，在定义函数时 功能：接收数据 形式参数 简称形参
+    function foo(a,b){
+        console.log(a);//3
+        console.log(b);//4
+        console.log(a+b); //7
+        console.log(a,b,c);
+    }
+
+    // 调用函数
+    // ()是用来传递数据的 传递的数据叫实际参数 简称实参
+    // 实参，在函数调用的时候使用，调用的过程中，实际上是实参对形参赋值的一个过程
+    foo(3,4);
+    foo(30,40);
+
+
+    </script>
+</body>
+</html>

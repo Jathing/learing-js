@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //求1~100 平均数
+    /*    let sum = 0
+       for (let i = 0; i <= 100; i++) {
+         sum += i;
+       }
+       console.log(sum / 100) */
+
+    //求1~100所有的奇数和和偶数和
+    // let sum1 = 0;
+    // let sum2 = 0;
+    // for (let i = 0; i <= 100; i++) {
+    //   if (i % 2 == 0) {
+    //     sum1 += i
+    //   } else if (i % 2 != 0) {
+    //     sum2 += i;
+    //   }
+    // }
+    // console.log("偶数和:" + sum1, "奇数和:" + sum2)
+
+    // 第五题
+    let sum = 0;
+    for (let i = 1; i <= 100; i++) {
+      if (i % 10 != 3) {
+        sum += i;
+      }
+    }
+    console.log(sum)
+    // 第六题
+    let a = 0;
+
+    for (var i = 1; i <= 1000; i++) {
+      if (i % 7 == 0 && i % 3 == 0) {
+        a++
+        if (a == 35) {
+          break;
+        }
+      }
+    }
+    console.log(i)
+
+    // 第7题
+    // let num = 6324;
+    // var b = 0;
+    // for (var i = 1000; i >= 1; i /= 10) {
+    //   b = parseInt(num / i) % 10;
+    //   console.log(b);
+    // }
+
+    // //质数
+    // let numz = +prompt("请输入一个正整数");
+    // // let flag = true;
+    // for (let i = 2; i < numz; i++) {
+    //   if (numz % i == 0) {
+    //     alert("不是质数");
+    //     break;
+    //   } else {
+    //     alert("是质数");
+    //     break;
+    //   }
+    // }
+
+    // 给20块钱买可乐，每瓶可乐3块钱，喝完之后退瓶子可以换回1块钱，问最多可以喝到多少瓶可乐。
+
+    // var count = 0;
+    // var money = 20;
+    // while (money >= 3) {
+    //   count++;
+    //   money++;
+    //   money -= 3;
+    // }
+    // console.log(count);
+
+    var count = 0;
+    for (var money = 20; money >= 0; money -= 3) {
+      if (money < 3) {
+        break;
+      }
+      count++;
+      money++;
+      console.log(money)
+    }
+    console.log(count);
+
+  </script>
+</body>
+
+</html>

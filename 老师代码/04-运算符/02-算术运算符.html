@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    //    概念：数学运算符也叫算术运算符，主要包括加、减、乘、除、取余（求模）。
+    //     +  -  *  /  %
+   
+    //------------------------------    
+    // +
+    var a = 1;
+    var b = 2;
+    var c = a + b;
+    console.log(c);  //3
+
+    var d = 100;
+    var e = true;  //1
+    var f = d + e;
+    console.log(f);  //101
+
+    console.log(666 + null );//666   null--0  666+0
+
+    // NaN和任何数据进行运算，结果都是NaN
+    console.log(666 + NaN); // NaN 
+
+    // 如果+ 碰上了字符串 那么+ 在这里代表拼接字符串
+    // + 会把number类型转为String类型
+    console.log(666 + "123");//666123  
+
+    //------------------------------ 
+    // -
+    console.log(1 - true);//0
+    console.log(1 - null);//1
+    console.log(1 - NaN);//NaN
+    console.log(1 - "666");//-665  -没有隐式转换为字符串的功能，也没有拼接字符串的功能 
+    console.log(1 - "文字"); //NaN
+    console.log(1 - "a"); //NaN
+
+    //------------------------------ 
+    // *
+    console.log(1 * true);//1
+    console.log(1 * false);//0
+    console.log(1 * null);//0
+    console.log(1 * NaN);//NaN
+    console.log(1 * "666");//666  "666"隐式转换为number类型
+    console.log(1 * "文字");//NaN
+
+    //------------------------------ 
+    // 除（/）
+    console.log(1 / true);//1
+    console.log(1 / false);//Infinity   1/0
+    console.log(1 / null);//Infinity    1/0
+    console.log(1 / NaN);//NaN
+    console.log(1 / "666");//0.0015015015015015015
+    console.log(1 / "文字");//NaN
+
+    //------------------------------ 
+    // 取余（%）
+    console.log(10 % 3);//1
+    console.log(3 % 10);//3
+    console.log(3 % 0);//NaN
+
+    // 表达式：任何有值的内容，都称为表达式
+    // 1+1  123  1+1+1
+
+    // 表达式有返回值：运算符参与运算 最终会得出一个结果，返回的一个新数据，返回的数据称之为表达式的返回值
+    // 1+1 = 2   100 - 50 = 50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

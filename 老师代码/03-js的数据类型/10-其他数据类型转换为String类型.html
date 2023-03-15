@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 总结：其他数据类型转为String类型
+        // 1）强转  toString()  String()
+        // 2) 隐式转换  +  
+
+
+        // 隐式转换 +
+        // + 拼接字符串
+        var str1 = "hello";
+        var str2 = "world";
+        var str3 = str1 + str2;
+        console.log(str3);
+
+
+        // + 运算符 所有的运算符 ，当我们进行操作的时候，需要保证左右两侧数据类型是一致的
+        // 如果+左右两侧数据不一致， + 会悄悄的把一种数据类型转为另一种数据类型，保持数据类型一致
+        // 这叫隐式转换  +
+        // a + b
+        var str4 = 100;   //number  -- string 
+        var str5 = "hello";  //string
+        var str6 = str4 + str5 ;
+        console.log(str6); //100hello
+
+        // 字面量和字符串拼接
+        console.log("haha" + 111);//haha111
+
+
+        // 运算符优先级网址：https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+        // typeof(15) 优先级高于  二元加法（12）
+        // 先typeof检测 再+运算
+        var str7 = 100;
+        console.log(typeof str7 + "haha"); //numberhaha
+        
+
+       
+    </script>
+</body>
+</html>

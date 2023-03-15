@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //质数是只能被1和它本身整除的正整数。换句话说，一个大于1的数字如果只能被1和它自己整除，那么这个数字就是质数。
+    let num = +prompt("请输入一个正整数");
+    let flag = true;
+    for (let i = 2; i < num; i++) {
+      if (num % i == 0) {
+        flag = false;
+        break;
+      }
+    }
+    if (flag) {
+      console.log("是质数");
+    } else {
+      console.log("不是质数");
+    }
+
+  </script>
+</body>
+
+</html>

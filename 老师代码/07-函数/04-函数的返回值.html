@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 函数不仅仅可以有参数, 也可以有返回值
+
+        // 使用return关键字来返回结果
+        // 一旦在函数中执行return操作，那么当前函数会终止
+        // 如果函数中没有使用 return语句 ，那么函数有默认的返回值：undefined
+        // 如果函数使用 return语句，但是return后面没有任何值，那么函数的返回值也是：undefined
+       
+        // 函数返回的关键字 return
+        // return  返回
+        // return "111"  返回了"111"
+        // 返回到什么地方？
+        // 返回在函数的调用处
+
+        // 情况1：return后面有操作
+        function bar(a,b,c){
+            return a+b+c
+        }
+        // 此时 你看到的bar(),这个整体在你眼中应该是一个值，是函数的返回值
+        var res =  bar(1,2,3)
+        console.log(res);
+
+
+        // 情况2：如果函数中没有是用return语句，那么函数有返回值：默认值undefined
+        function foo(){
+            
+        }
+        // 不管有没有实参或者形参，只要是函数的调用，都有值：默认值undefined
+        var res =  foo()
+        console.log(res);  //undefined
+
+        // 情况3：
+        function fn(){
+            // 1.return有终止函数的作用
+            // 2.如果只写了return，但是return后面没有写任何操作，默认返回undefined
+            return;
+            console.log(111);
+            console.log(111);
+            console.log(111);
+        }
+        var res =  fn();
+        console.log(res); //undefined
+
+        // 案例：
+        function foo1(){
+            console.log('xixi');
+            return 'haha';
+            console.log('heihei');
+        }
+       var res = foo1();
+       console.log(res);  //haha
+        //    替代方式
+        //    console.log(foo1());
+
+
+
+
+        
+
+
+    </script>
+</body>
+</html>

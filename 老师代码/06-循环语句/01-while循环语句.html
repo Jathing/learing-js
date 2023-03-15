@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 循环的本质 就是某个变量为初始值，然后产生不断的变化量，慢慢靠近终止的条件
+        // 循环需要具备三要素
+        // 1.变量的初始值
+        // 2.终止条件
+        // 3.变量的变化量
+
+        // 距离的初始值
+        var distance = 0;
+        // 循环变量的起始值
+        var i = 0;
+        // i<=5 循环条件  如果条件成立 执行循环体
+        // 如果条件不成立 ，结束（跳出）循环
+        while(i<=5){
+            distance += 500;
+            i++;   //改变循环变量
+        }
+        console.log(distance);  //  3000
+
+
+        // 没有改变循环变量，导致死循环
+        // var a = 1;
+        // while(a < 2){
+        //     console.log('heihei');
+        // }
+
+
+        
+
+
+
+        
+
+
+
+
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 第一种情况：单分支语句
+        // if(条件){
+        //     满足条件执行的代码块
+        // }
+
+       /*  var age = 20;
+        if(age < 18){
+            console.log("禁止去上网");
+        }
+        console.log(111); */
+
+        // 第二种情况:双分支语句
+        // if(条件){
+        //     满足条件执行的代码块
+        // }else{
+        //     不满足上面的条件要执行的代码
+        // }
+
+        /* var age = 13;
+        if(age >= 18){
+            console.log("可以去上网");
+        }else{
+            console.log("不可以去上网");
+        } */
+
+        // 第三种情况：多分支语句
+        // if(条件1){
+        //     满足条件执行的代码
+        // }else if(条件2){
+        //     满足条件执行的代码
+        // }else if(条件3){
+        //     满足条件执行的代码
+        // }else{
+        //     以上都不满足的时候执行的代码块
+        // }
+        var age = 3;
+        if(age >= 18){
+            console.log('上大学');
+        }else if(age >= 12){
+            console.log('上中学');
+        }else if(age >= 6){
+            console.log('上小学');
+        }else{
+            console.log('在家玩');
+        }
+
+
+        // 注意细节：
+        // 1.if语句中的条件，不管什么表达式，最后转成布尔类型
+        // 2.if语句中 是否相等判断时，字面量最好写在前面
+            var num = 66;
+            // if(66 = num){
+
+            // }
+        // 3.if语句后面{}可以不写，如果不写的话，只有if后面的一条语句，相当于是{}中的
+            if(true)
+                console.log('haha');
+                
+        // 4.if语句可以嵌套
+            if(1>=2){
+                if(3>2){
+                    console.log('heihei');
+                }else{
+                    console.log('xixi');
+                }
+
+            }else{
+                if(3>=4){
+                    console.log('haha');
+                }else{
+                    console.log('hehe');
+                }
+            }
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 冒泡排序的原理
+        // 比较相邻的元素,如果第一个比第二个大，交换两个元素
+        // 对每一个相邻元素做同样的工作，从开始第一对到结尾的最后一对，最后的元素通过比较交换应该是最大的数
+        // 针对所有元素做相同的工作，除了最后一个
+        // 持续每次的比较交换工作，交换的次数越来越少，直到没有一对数据作比较
+        // 排序结束
+
+        // 比如：6个数  你需要比较5趟，第一趟比较5次 这个是固定死的
+        // 每一趟的次数 是递减的
+       
+        // 需要知道比较几趟 每趟比较几次
+
+
+    
+
+        // 实现方式
+        var arr = [6,5,4,3,2,1];
+        // 外层循环 ，控制趟数，每一次找到最大值  ---确定轮数
+        for(var i = 0; i < arr.length - 1;i++){
+            // 内层循环，控制比较的次数，并且需要判断两个数的大小并交换   --确定次数（比较的遍数）
+            for(var j = 0; j < arr.length - i - 1 ;j++){
+                if(arr[j] > arr[j + 1]){
+                    var max = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = max
+                }
+            }
+            console.log("第" + i + "次排序" + arr);
+        }
+        console.log("最终排序" + arr);
+
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <script>
+        // 1.定义一个函数，这个函数求1-100的和
+        function getSum(){
+            var sum = 0;
+            for(var i = 0;i <= 100;i++){
+                sum += i;
+            }
+            return sum
+        }
+        console.log(getSum());
+
+        // 2、定义一个函数,这个函数可以求任意两个数的和
+        // 方式1：
+        function getSum1(a,b){
+            return a + b;
+        }
+        console.log(getSum1(1,2));
+        console.log(getSum1(123,234));
+        console.log(getSum1(121,224));
+        // 方式2：
+        function getSum2(a,b){
+            console.log(a + b);
+        }
+        getSum2(22,33);
+        getSum2(221,332);
+
+        // 3、定义一个函数,这个函数求任意两个数的最大值
+        function getMax(a,b){
+            return  a > b ? a : b
+        }
+        console.log(getMax(10,20));
+        console.log(getMax(100,200));
+
+        // 4、请定义一个函数 有两个参数 返回值是两个参数的和 如果参数是字符串 就进行字符串的拼接并返回
+
+        // 5、请定义一个函数 并传入一个数字参数 返回值是1到该数字中间所有数的和
+
+        // 今天任务：
+        // 1.将函数中上课老师提到的知识点掌握并总结
+        // 2.将课堂代码至少敲写一遍，重要
+        // 3.将练习题（包括上课讲过的，试着开发多种思路）自主完成
+        // 4.总结笔记
+
+        // 周六任务：
+        // 1.将课件中js 的练习题，函数之前的（除数组），将练习题完整的过一遍（重要）
+        // 2.将本周学的js的笔记在飞书上总结补充完整
+        // 3.对本周查漏补缺，哪里没完全掌握重点复习
+
+
+
+
+
+       
+    </script>
+</body>
+</html>

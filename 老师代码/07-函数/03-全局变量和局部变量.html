@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // 全局变量和局部变量
+        // 定义在函数内部的变量是局部变量（只能在一定范围内使用）
+        // 定义在函数外部的变量是全局变量（在js里面哪里都可以使用）
+        
+        // 全局变量的特点：
+        // 在函数内部或者外部都可以访问到，在script标签中的任意一个地方都可以访问
+
+        // 局部变量的特点：
+        // 只有在函数内可以被访问，在函数外访问会报错，报错：XX is not defined 
+        
+        var a = 1;//全局变量
+
+        // 声明函数
+        function bar() {
+            var b = 2;//局部变量
+            // c = 2;//全局变量
+            console.log(a); //1
+            console.log(b); //2
+        }
+        // 调用函数
+        bar()
+
+        console.log(a);//1
+        // console.log(b);// b is not defined  没有被定义
+
+
+        // 案例1：
+        var isLogin = true; //全局变量
+        if (isLogin) {
+            // 全局变量：因为全局变量和局部变量的分界点是函数 函数 function
+            var isOk = 'haha';  //全局变量
+            console.log('欢迎进入');
+        }
+
+        // 案例2：
+        for (var i = 1; i <= 100; i++) {
+            console.log(i);
+            var j = 111; //全局变量
+        }
+
+        // 案例3：
+        function getNum() {
+            for (var i = 1; i <= 100; i++) {
+                console.log(i);
+                var j = 111; //局部变量
+            }
+        }
+        getNum()
+
+
+
+    </script>
+</body>
+
+</html>

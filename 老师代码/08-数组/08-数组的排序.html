@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // reverse 翻转
+        // 语法：arr.reverse()
+        var arr1 = ['z3', 'l4', 'w5', 'z6', 't7'];
+        console.log(arr1.reverse());
+    </script>
+
+<!--     <script>
+        // sort  排序 
+        // 语法：arr.sort()  默认是一位一位比较的 根据ASSIC比较
+        var arr = [2,3,4365,6,7,4,43,54];
+        console.log(arr.sort());//[2, 3, 4, 43, 4365, 54, 6, 7]
+
+        var arr2 = ["a","b","d","c","f"];
+        console.log(arr2.sort());// ['a', 'b', 'c', 'd', 'f']
+
+        var arr3 = ['hello','world','hi','function'];
+        console.log(arr3.sort());
+
+    </script> -->
+
+     <script>
+        // sort 升序 从小到大
+        var arr = [2,3,4365,6,7,4,43,54];
+        arr.sort(function(a,b){
+            // a 和 b 比较
+            return a - b
+        })
+        console.log(arr);
+    </script>
+
+    <script>
+        // sort 降序 从大到小
+        var arr = [2,3,4365,6,7,4,43,54];
+        arr.sort(function(a,b){
+            return b - a
+        })
+        console.log(arr);
+    </script>
+</body>
+</html>

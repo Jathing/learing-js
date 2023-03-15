@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Boolean()  构造函数
+        // 强转
+        // 总结:
+        // 转为false: 0 null NaN undefined 空串
+        // 转为true：排除false 都会转为true
+
+
+        // 字符串转Boolean
+        var str1 = "123";  //string
+        console.log(Boolean(str1));  //true
+        console.log(typeof Boolean(str1));
+
+        var str2 = "";  //string
+        console.log(Boolean(str2));  //false
+        console.log(typeof Boolean(str2));
+
+        var str3 = "  ";  //string
+        console.log(Boolean(str3));  //true
+        console.log(typeof Boolean(str3));
+
+        var str4 = "文字";  //string
+        console.log(Boolean(str4));  //true
+        console.log(typeof Boolean(str4));
+
+        var str5 = "false";  //string
+        console.log(Boolean(str5));  //true
+        console.log(typeof Boolean(str5));
+
+        // number转boolean
+        var a = 123;//number
+        console.log(Boolean(a)); //true
+        console.log(typeof Boolean(a));
+
+        // number转boolean
+        var b = 0;//number
+        console.log(Boolean(b)); //false
+        console.log(typeof Boolean(b));
+
+        // number转boolean
+        var c = NaN;//number
+        console.log(Boolean(c)); //false
+        console.log(typeof Boolean(c));
+
+        // number转boolean
+        var d = -1;//number
+        console.log(Boolean(d)); //true
+        console.log(typeof Boolean(d));
+
+        // undefined转boolean
+        var str6;  //und
+        console.log(Boolean(str6));  //false
+        console.log(typeof Boolean(str6));
+       
+
+        // null转boolean
+        var str7 = null;  //und
+        console.log(Boolean(str7));  //false
+        console.log(typeof Boolean(str7));
+       
+
+
+
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!--
+ * @Author: Jathon hi@chenjia.xin
+ * @Date: 2023-03-06 09:33:38
+ * @LastEditors: Jathon hi@chenjia.xin
+ * @LastEditTime: 2023-03-06 10:05:15
+ * @FilePath: \JavaScript\0306\练习\03-js的编写位置.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<!-- 
+    书写位置一：把js代码写在html标签（开始标签）内
+   -->
+
+<body>
+  <button onclick="alert('点我')">点我1</button>
+
+  <!-- 
+    书写位置二：把js代码写在html标签（结束标签）外
+   -->
+  <button id="btn2">点我2</button>
+
+  <!-- 所有的js代码写在script标签中 -->
+
+  <script>
+    var btn2 = document.getElementById('btn2');
+    btn2.onclick = function () {
+      alert('点我2');
+    }
+  </script>
+
+  <script>
+    
+    // 书写位置三：把js代码写在html文件中，但是要写在html标签（结束标签）外
+    var btn3 = document.getElementById('btn3');
+    btn3.onclick = function () {
+      alert('点我3');
+    }
+  </script>
+
+  <script src="../../02_Javascript_基本语法/bing.js">
+
+  </script>
+</body>
+
+</html>

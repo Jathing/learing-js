@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 打开页面后输入一个成绩 请判定该成绩是否在数组[86, 95, 96, 59, 88]中，如果在 弹出已存在 如果不在就添加到数组中后弹出已添加
+
+    var num = +prompt("请输入成绩:")
+    var arr = [86, 95, 96, 59, 88];
+    arr.includes(num) == true
+      ? alert("已存在")
+      : arr.push(num);
+    alert("已添加")
+    console.log(arr)
+  </script>
+</body>
+
+</html>

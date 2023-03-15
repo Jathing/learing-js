@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 对数组[98, 98, 99, 96, 92, 93, 94, 99, 96]去重后输出
+    let arr = [98, 98, 99, 96, 92, 93, 94, 99, 96];
+    // 有点low的方法
+    // for (let i = 0; i < arr.length; i++) {
+    //   for (let j = i + 1; j < arr.length; j++) {
+    //     if (arr[i] == arr[j]) {
+    //       var subscript = arr.indexOf(arr[j])
+    //       // 删除它的值
+    //       arr.splice(subscript, 1)
+    //     }
+    //   }
+    // }
+    let res = arr.filter((item, index) => arr.indexOf(item) == index);
+      
+
+
+    console.log(res)
+
+  </script>
+</body>
+
+</html>

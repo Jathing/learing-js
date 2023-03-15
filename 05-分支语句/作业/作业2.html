@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 2.首先判断是否为会员(如果是输入y，否则输入n)，然后再计算金额,普通顾客购物满100元 9折；会员购物 8折；会员购物满200元 7.5折
+    var isMember = prompt("是否为会员?(y/n)");
+    var money = prompt("请输入金额");
+    if (isMember == "y") {
+      if (money >= 200) {
+        money *= 0.75;
+      } else if (money >= 100) {
+        money *= 0.8;
+      }
+    } else if (isMember == "n") {
+      if (money >= 100) {
+        money *= 0.9;
+      }
+    } else {
+      alert("输入错误,请重新输入");
+    }
+    alert("应付金额为：" + money);
+
+  </script>
+</body>
+
+</html>

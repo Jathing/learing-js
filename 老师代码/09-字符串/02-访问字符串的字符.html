@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 使用方法一：通过字符串的索引 str[0]
+        // 使用方法二：通过str.charAt(pos)方法
+
+
+        // 使用方法一：通过字符串的索引 str[0]
+        var str1 = "hello";
+        console.log(str1[1]);//e
+        console.log(str1[2]);//l
+
+        // 使用方法二：通过str.charAt(pos)方法
+        console.log(str1.charAt(0));//h
+        console.log(str1.charAt(4));//o
+        console.log(str1.charAt(5));//空串
+   
+        // 它们的区别是索引的方式没有找到会返回undefined，而charAt没有找到会返回空字符串；
+        console.log(str1[8]);  //und
+        console.log(str1.charAt(8)); //空串（空字符串）
+        
+    </script>
+</body>
+</html>

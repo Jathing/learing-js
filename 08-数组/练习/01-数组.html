@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 要求: 将数组['red'，green，blue，pink]转换为字符串，并且用 | 或其他符号分割
+
+    // function arrayToString(arr) {
+    //   var strArr = ""
+    //   for (var i = 0; i < arr.length; i++) {
+
+    //     strArr += arr[i] + "|";
+    //   }
+    //   return arr[i];
+    // }
+
+    // var arr1 = ['red', 'green', 'blue', 'pink'];
+    // var newStr = arrayToString(arr1);
+    // console.log(newStr);
+
+
+
+    // var arr = ['red', 'green', 'blue', 'pink'];
+    // var strArr = ""
+    // for (let i = 0; i < arr.length; i++) {
+    //   if (i == arr.length - 1) {
+    //     strArr += arr[i];
+    //     break;
+    //   }
+    //   strArr += arr[i] + "|";
+
+    // }
+    // console.log(strArr)
+    // console.log(typeof strArr);
+
+
+    // 最大值最小值
+    var arr = [12, 13, 9, 11];
+    var max = arr[0]
+    var min = arr[0]
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] > max) {
+        max = arr[i];
+      }
+      if (arr[i] < min) {
+        min = arr[i];
+      }
+    }
+    console.log(min);
+    console.log(max);
+
+    // console.log(arr[0])
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    // 具名函数  有名字的函数
+    // 匿名函数  没有名字的函数
+    
+    // 1）具名函数  常用
+    // 声明函数
+    function foo(a,b){
+        return a+b;
+    }
+    // 调用函数
+    // 写法1:赋值给一个变量
+    var res = foo(1,2);
+    console.log(res);
+    
+    // 写法2:直接打印
+    console.log(foo(1,2));
+
+
+    // 2)匿名函数  也可以成为函数表达式
+    // 语法:
+    // 声明匿名函数
+    var bar = function(a,b){
+
+    }
+    // 调用匿名函数(和具名函数的调用方式一样)
+    bar(1,2)
+
+    // 案例：
+    var bar = function(a,b){
+            return a + b;
+    }
+    console.log(bar(3,2));
+
+    // 案例：
+    function bar1(a,b,c,d){
+        // 如果在调用函数的时候，没有给形参赋值，给形参赋值的数量不照应，那么参数值是undefined
+        console.log(a,b,c,d);  //1 2 3 undefined
+    }
+    bar1(1,2,3)
+
+    // undefined目前出现在那些地方？
+    // 1）如果变量只声明不赋值，那么变量的值是undefined
+    // 2）如果函数没有提供return返回值，默认值是undefined
+    // 3）如果实参没有给形参赋值，形参的默认值是undefined
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 方法一：getTime()
+        var date1 = new Date().getTime();
+        console.log(date1);
+
+        // 方法二：valueOf()
+        var date2 = new Date().valueOf();
+        console.log(date2);
+        
+        // 方法三：+
+        var date3 = +new Date();
+        console.log(date3);
+
+        // 方法四：Date.now()
+        var date4 = Date.now();
+        console.log(date4);
+
+        // 利用时间戳去计算代码的执行时间
+        var startTime = Date.now();
+        for( var i = 0 ; i < 100000;i++){
+            console.log(i);
+        }
+        var endTime = Date.now();
+        console.log("for循环消耗的时间：",endTime - startTime); //5306  1s=1000ms
+    </script>
+</body>
+</html>

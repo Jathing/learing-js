@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 2.对于数组[98，98，99，96，92] 请把另一位插班生的成绩添加到数组的最前面 成绩为91
+    let arr = [98, 98, 99, 96, 92];
+    let achievement = 91;
+    // 方式一:
+    arr.unshift(achievement);
+    console.log(arr);
+
+    // 方式二:
+    arr.splice(0, 0, 91)
+    console.log(arr);
+
+  </script>
+</body>
+
+</html>

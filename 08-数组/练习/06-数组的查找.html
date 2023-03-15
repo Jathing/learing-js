@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // indexOf查找元素对应的索引
+    // includes 查找数组是否包含某个元素
+    // find 查找元素
+    // findIndex 查找元素对应的索引
+
+    var arr = [1, 2, 3, 4, 5, 6, 7]
+    // console.log(arr.indexOf(3))
+    // console.log(arr.indexOf(7))
+    // console.log(arr.indexOf(10))
+
+    // console.log(arr.includes(2))
+    // console.log(arr.includes(8))
+
+
+    // find自带遍历功能
+    var res = arr.find(function (item, index, arr) {
+      console.log("索引", index);
+      console.log("元素", item);
+      return index == 4
+      // return item == 1
+
+    })
+    console.log(res)
+
+
+  </script>
+</body>
+
+</html>

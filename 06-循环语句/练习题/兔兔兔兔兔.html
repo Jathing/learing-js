@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 有一对幼兔, 幼兔1个月后长成小兔，小兔1个月后长成成兔并生下一对幼兔, 问8个月后有多少对兔子, 幼兔 小兔成兔对数分别是多少。
+    let newborn = 1; // 初始为1对刚出生的幼兔
+    let young = 0; // 初始无小兔
+    let adult = 0; // 初始成兔也没有
+    let count = 0;// 计数
+    for (let i = 1; i <= 8; i++) {
+
+      adult += young;
+      young = newborn;
+      newborn = adult;
+      count = young + newborn + adult;
+    }
+    console.log(`总共有${count}对,幼兔有 ${newborn} 对，小兔有 ${young} 对，成兔有 ${adult} 对`);
+
+  </script>
+</body>
+
+</html>

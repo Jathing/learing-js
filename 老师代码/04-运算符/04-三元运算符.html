@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 三目运算符/三元表达式
+        // 写法： 表达式 ? 结果A : 结果B
+         var res = true ? "hello" : "world";
+         console.log(res);  //hello
+
+         var res2 = false ? "hello" : "world";
+         console.log(res2);  //world
+
+         var a = 1;
+         var b = 2;
+         var res3 = a>b ? "true" : "false"
+         console.log(res3);
+ 
+        //  用户输入一个数，来判断是奇数还是偶数  num % 2 == 0
+        var num = +prompt("请输入一个整数");
+        alert(num % 2 == 0 ? '偶数' : '奇数');
+
+        // 要求用户输入一个整数，判断输入的数字是否在100-200之间，并用提示框弹出
+        // 100 <= num <= 200   num1>=100 && num1 <=200   150
+        var num1 = +prompt("请输入一个整数");
+        (num1>=100 && num1<=200)?alert("在100-200之间"):alert("不在100-200之间")
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    //    1.if分支语句-东方航空从北京飞往马尔代夫的机票原价为4000元，4到10月份为旺季，其他月份为淡季，旺季时候头等舱打9折，经济舱打7.5折；淡季头等舱打6折，经济舱打3折。输入出行的月份和选择的舱型计算出机票价格。
+
+    //    2.首先判断是否为会员(如果是输入y，否则输入n)，然后再计算金额,普通顾客购物满100元 9折；会员购物 8折；会员购物满200元 7.5折\
+
+// 今日任务：
+// 1.当天的代码敲写一遍，掌握三大流程控制中的分支结构（if为重点）
+// 2.将老师上课的练习题自主敲写一遍
+// 3.将留的两道课下作业完成
+// 4.预习三大流程控制中的循环结构（for循环为重点）
+
+
+    </script>
+
+    <!-- <script>
+        //  1.if分支语句-东方航空从北京飞往马尔代夫的机票原价为4000元，4到10月份为旺季，其他月份为淡季，旺季时候头等舱打9折，经济舱打7.5折；淡季头等舱打6折，经济舱打3折。输入出行的月份和选择的舱型计算出机票价格。
+        // 旺季  4-10         头 9   经 7.5
+        // 淡季  1-3  11  12  头 6   经 3
+        var month = + prompt("请输入月份");
+        var tank = prompt("请输入舱型");
+        // 4<=month<=10
+        if(month >=4 && month <=10){
+            // 旺季
+            if(tank === "头等舱"){
+                console.log(4000 * 0.9);
+            }else if(tank === "经济舱"){
+                console.log(4000 * 0.75);
+            }else{
+                console.log('请输入正确的舱型');
+            }
+        }else if(month >=1 && month <=3 ||month>= 11 && month <= 12){
+            // 淡季
+            if(tank === "头等舱"){
+                console.log(4000 * 0.6);
+            }else if(tank === "经济舱"){
+                console.log(4000 * 0.3);
+            }else{
+                console.log('请输入正确的舱型');
+            }
+        }else{
+            alert('请输入正确的月份')
+        }
+
+        // 三元表达式
+
+    </script> -->
+
+    <script>
+        // 首先判断是否为会员(如果是输入y，否则输入n)
+        // 然后再计算金额,普通顾客购物满100元 9折；会员购物8折；会员购物满200元 7.5折
+        // 普通顾客  满100  9折
+        // 会员  8折 满200  7.5折
+        var isVip = prompt('是否为会员，如果是输入y，否则输入n');
+        var money = 0;
+        if(isVip === "y"){
+            money = +prompt('请输入消费金额');
+            money >= 200 ? console.log(money * 0.75) : console.log(money * 0.8);
+
+        }else if(isVip === "n"){
+            money = +prompt('请输入消费金额');
+            money >=100 ? console.log(money * 0.9) : console.log(money); ;
+        
+        }else{
+            console.log('请输入y和n');
+        }
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // toString() 可以把number 和 boolean 转换为字符串
+        // 这是一个强转化
+
+        // 1.number类型转string类型
+        var a = 100;  //number
+        // . 属性访问运算符
+        // a不是一个对象 
+        // a.toString(),会瞬间包装成一个对象，这类对象叫包装对象
+        console.log(a.toString());
+        console.log(typeof a.toString());  //string
+
+        // 2.boolean类型转string类型
+        var isOk = false; //boolean
+        console.log(isOk.toString());
+        console.log(typeof isOk.toString()); //string
+
+        // 3.字面量转string类型
+        // 1111 称之为字面量 111  是一个固定的值
+        // console.log(111.toString());
+
+        // 4.undefined转string类型  不能强转
+        var b;  //und（只声明不赋值）
+        // Cannot read properties of undefined (reading 'toString')
+        console.log(b.toString());
+        console.log(typeof b.toString());
+
+
+
+
+
+       
+    </script>
+</body>
+</html>

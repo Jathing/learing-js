@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 练习一:定义一些变量,保存自己的个人信息:
+    var uname = "陈";
+    var age = 18;
+    var height = 180;
+    var weight = 150;
+    var hobby = "Coding";
+
+    // 练习二:定义一个变量name,赋值成wangcai.定义一个变量admin
+    // 将name赋值给admin
+    var uname = "wangcai";
+    var admin = uname;
+    console.log(admin);
+
+    // 练习三:定义变量,保存两个数字,并且对两个变量的数字进行交换
+    var num1 = 1;
+    var num2 = 2;
+    var num3;
+    num3 = num1;
+    num1 = num2;
+    num2 = num3;
+
+    console.log(num1, num2)
+
+    // 练习三: 使用加减符号,不引入新的变量
+    var a = 1;
+    var b = 2;
+    a = a + b;  // 1 + 2 = 3 
+    b = a - b;  // 3 - 2 = 1
+    a = a - b;  // 3 - 1 = 2
+    console.log(a, b)
+
+    // 练习三:使用异或运算符
+    var i = 1;
+    var j = 2;
+    i = i ^ j;
+    j = i ^ j;
+    i = i ^ j;
+    console.log(i, j)
+
+    // 逐个输入姓名,年龄,身高,体重
+    // 并将输入的东西在控制台打印
+    var uname = prompt('请输入您的姓名:');
+    console.log(uname);
+    var uage = prompt("请输入您的年龄:")
+    console.log(uage);
+    var uheight = prompt("请输入您的身高:");
+    console.log(uheight);
+    var uweight = prompt("请输入您的体重:")
+    console.log(uweight);
+
+    console.log(uname, uage, uheight, uweight)
+
+    alert("您的名字:" + uname + "您的年龄" + uage + "您的身高" + uheight + "您的体重" + uweight)
+
+
+  </script>
+</body>
+
+</html>

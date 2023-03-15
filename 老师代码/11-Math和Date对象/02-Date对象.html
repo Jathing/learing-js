@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // data 是数据的意思  date 是日期的意思
+        var date1 = new Date();
+        console.log(date1);  //Tue Mar 14 2023 16:14:41 GMT+0800 (中国标准时间)
+
+        var date2 = new Date('2023-03-14');
+        console.log(date2);//Tue Mar 14 2023 08:00:00 GMT+0800 (中国标准时间)
+       
+        var date3 = new Date('2023,03,14,16,16,30');
+        console.log(date3);//invalid date 无效的日期
+
+        var date4 = new Date(2023,03,14,16,17,30);
+        console.log(date4);//Fri Apr 14 2023 16:17:30 GMT+0800 (中国标准时间)
+
+
+        // 获取时间戳(它是一个整数值，表示自1970年1月1日00:00:00 UTC以来的毫秒数)
+        var date5 = new Date().getTime();  //1s=1000ms
+        console.log(date5);
+
+        var date6 = new Date(1678782065390);//Tue Mar 14 2023 16:21:05 GMT+0800 (中国标准时间)
+        console.log(date6);
+       
+    </script>
+</body>
+</html>

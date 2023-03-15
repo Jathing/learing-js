@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var a = 1 ;
+        a += 1;//a=a+1;
+
+        var b = 10;
+        b++;
+        b++;
+        b++;
+        b++;
+        b++;
+        console.log(b);//15
+        console.log(b++);//15  
+
+        var c = 10;
+        ++c;
+        ++c;
+        ++c;
+        ++c;
+        ++c;
+        console.log(c); //15
+        console.log(++c); //16
+
+        // ++ 在前，整体是一个新值 ，++在后整体是一个旧值
+        
+        var e = 10;
+        var f = ++e;
+        console.log(e);//11
+        console.log(f);//11
+
+        var h = 10;
+        var j = h++;
+        console.log(h); //11
+        console.log(j); //10
+
+        var a  = 10;
+        var b = 5;
+        a++;
+        a++;
+        a++;
+        var res = a++ + b;
+        console.log(res);  //18  
+
+
+        var a = 99;
+        var b = 22;
+        var res = (a--) - (b--);
+        console.log(a);//98
+        console.log(a - b); //77
+        console.log(res); //77
+
+      
+        var g = 100;
+        var h = ++g + g++;
+        console.log(g); //102  
+        console.log(h); //202
+
+
+
+
+
+
+
+
+
+       
+    </script>
+</body>
+</html>

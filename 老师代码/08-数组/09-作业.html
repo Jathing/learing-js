@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    //    任务安排：
+    //     任务1：将课堂代码敲一遍，重要！
+    //     任务2：将课堂代码通过笔记的方式系统的整理一遍
+    //     任务3：如果以上都完成，思考以下五道题，题5（进阶题）选做
+    //     1.遍历数组[10, 1, 19, 22, 73]  将其中的偶数找出, 保存到一个新的数组中
+    //     2.对于数组[98, 98, 99, 96, 92] 请把另一位插班生的成绩添加到数组的最前面 成绩为91
+    //     3.对于数组[98, 98, 99, 96, 92] 删除数组中的最后一个成绩和第一个成绩
+    //     4.对于数组[2,10,5,-9,3]，获取数组中最大的元素，打印出来
+    //     5.（进阶）将数组中值为0的去掉，不为0的存入一个新数组  [0,"刘备",0,"关羽",0,"张飞",0];
+    
+
+    //     6.要求用户输入3个0~9的数，输出0~9中哪些数字用户没有输入过(去重思想)  
+                // 思路：先输入3个数，用,隔开
+                // 把字符串变成数组  split
+                // 把数组从转成字符串 join
+                // 1 2 3   0456789
+
+    //     7.从键盘上接收5个0~9的数字，排序后输出，一次性输入5个数字，中间使用逗号隔开（排序思想）
+    </script>
+  <!--   <script>
+        // 1.遍历数组[10, 1, 19, 22, 73]  将其中的偶数找出, 保存到一个新的数组中
+        // 思路：遍历数组 ，通过判断去拿到偶数，声明空数组，通过push()
+           var arr = [10, 1, 19, 22, 73];
+           var newArr = [];
+           for(var i = 0 ; i < arr.length;i++){
+                if(arr[i] % 2 == 0){
+                    // 拿到为偶数的数
+                    console.log(arr[i]);
+                    // 放在新的数组中
+                    newArr.push(arr[i])
+                }
+           }
+           console.log(newArr);
+
+
+    </script> -->
+
+  <!--   <script>
+        // 对于数组[98, 98, 99, 96, 92] 请把另一位插班生的成绩添加到数组的最前面 成绩为91
+        var score = [98, 98, 99, 96, 92];
+        var res =  score.unshift(91);
+        console.log(score);  
+        console.log(res);  //6
+    </script> -->
+
+ <!--    <script>
+        // 对于数组[98, 98, 99, 96, 92] 删除数组中的最后一个成绩和第一个成绩
+        var score = [98, 98, 99, 96, 92];
+        score.pop();
+        console.log(score);  // [98, 98, 99, 96]
+        score.shift();
+        console.log(score);  // [98, 99, 96]
+
+    </script> -->
+
+   <!--  <script>
+        // 对于数组[2,10,5,-9,3]，获取数组中最大的元素，打印出来
+        var arr = [2,10,5,-9,3];
+        var max = arr[0];
+        for(var i = 0 ; i <arr.length;i++){
+            if(arr[i] > max){
+                max = arr[i]
+            }
+        }
+        console.log(max);
+    </script> -->
+
+   <!--  <script>
+        // 将数组中值为0的去掉，不为0的存入一个新数组  [0,"刘备",0,"关羽",0,"张飞",0];
+        // 思路：遍历数组，通过判断不为0的数据
+        //       声明空数组 通过push的方式放在空数组中
+        // 方式1：push
+        // var arr = [0,"刘备",0,"关羽",0,"张飞",0 ,"a","a"];
+        // var newArr = [];
+        // for(var i = 0 ; i < arr.length;i++){
+        //     if(arr[i] != 0 && arr[i]!= "a"){
+        //         console.log(arr[i]);
+        //         newArr.push(arr[i])
+        //     }
+        // }
+
+        // 方式2：filter
+        var arr = [0,"刘备",0,"关羽",0,"张飞",0 ,"a","a"];
+        var newArr =  arr.filter(function(item){
+            return item != "a" && item != 0
+        })
+        console.log(newArr);
+
+    </script> -->
+<!-- 
+    <script>
+         //6.要求用户输入3个0~9的数，输出0~9中哪些数字用户没有输入过(去重思想)  
+            // 思路：先输入3个数，用,隔开
+            // 把字符串变成数组  split
+            // 把数组从转成字符串 join
+            // 1 2 3   0456789
+
+            var str = prompt('请输入三个数字（0-9），用逗号隔开');
+            console.log(str);
+            var arr = str.split(',');
+            console.log(arr);
+            for(var i = 0;i < 10;i++){
+                if(arr[0] == i|| arr[1] == i || arr[2] == i){
+                    continue;
+                }
+                console.log(i);
+            }
+    </script> -->
+
+<!--     <script>
+        // 7.从键盘上接收5个0~9的数字，排序后输出，一次性输入5个数字，中间使用逗号隔开（排序思想）
+        // 排序：sort()
+        var str = prompt('请输入三个数字（0-9），用逗号隔开');
+        console.log(str);
+        var arr = str.split(',');
+        var newArr = arr.sort();
+        console.log(newArr);
+        console.log(arr);
+
+
+    </script> -->
+
+        <script>
+                var arr = [];
+                var arr2 = [];
+                for(i=0;i<3;i++){
+                    var num = +prompt("请输入");
+                    arr.push(num); 
+                        //  console.log(arr); 
+                }
+
+                for(j = 0;j<10;j++){
+                    if(arr[j] == j){
+                        continue;
+                    }
+                    console.log(arr[j]);
+                    console.log(j);
+                    // arr2.push(j);
+                }
+        //         console.log(arr2);
+            </script>
+
+
+
+
+
+</body>
+</html>

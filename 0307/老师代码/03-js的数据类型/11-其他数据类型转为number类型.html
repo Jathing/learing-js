@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1)通过Number() 构造函数
+        // 2） +  -
+        var str1 = "123";//string
+        console.log(Number(str1));//123
+        console.log(typeof Number(str1));//number
+
+        var str2 = "";//空串 string
+        console.log(Number(str2));//0
+        console.log(typeof Number(str2));//number
+       
+        var str3 = "100px";//string
+        console.log(Number(str3));// NaN 是number类型的特殊值
+        console.log(typeof Number(str3));//number
+
+        var str4 = "123";//string
+        console.log(+str4);
+        console.log(typeof +str4);  //number  +会尝试把string转为number
+
+        var str5 = "123";//string
+        console.log(-str5);
+        console.log(typeof -str5);  //number  -会尝试把string转为number
+
+        var str6 = "";//string 空串
+        console.log(+str6);   //-0
+        console.log(typeof +str6);  //number  -会尝试把string转为number
+
+        var str7 = "   ";//string 
+        console.log(+str7);   //-0
+        console.log(typeof +str7);  //number  -会尝试把string转为number
+
+
+
+
+       
+
+    </script>
+</body>
+</html>

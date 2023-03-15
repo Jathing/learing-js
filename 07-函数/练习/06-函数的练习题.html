@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1.求1~100之间所有数的和
+    // function getSum() {
+    //   var sum = 0;
+    //   for (var i = 0; i <= 100; i++) {
+    //     sum += i
+    //   }
+    //   return sum;
+    // }
+    // var result = getSum();
+    // console.log(result);
+
+    // 2.定义一个函数,这个函数可以求任意两个数之和
+    // var a = prompt("请输入第一个数");
+    // var b = prompt("请输入第一个数");
+    // function getSum(a, b) {
+    //   return a + b;
+    // }
+    // var res1 = getSum(a, b);
+    // console.log(res1)
+
+    // //3.定义一个函数,这个函数可以求任意两个数的最大值
+    // function getMax(a, b) {
+    //   return a > b ? a : b;
+    // }
+    // var res2 = getMax(a, b);
+    // console.log(res2);
+
+    // 4.定义一个函数,并传入一个数字参数,返回是两个参数的和 如果参数是字符串 就进行字符串拼接并返回
+    function getSum(a, b) {
+      return a + b;
+    }
+    console.log(getSum(a, b))
+
+    console.log(getSum(a, b))
+    //5.定义一个参数,并传入一个数字参数,
+    function getTotle(a) {
+      var sum = 0;
+      for (var i = 0; i < a; i++) {
+        sum += i
+      }
+      return sum;
+    }
+    console.log(getTotle(a))
+
+
+  </script>
+</body>
+
+</html>

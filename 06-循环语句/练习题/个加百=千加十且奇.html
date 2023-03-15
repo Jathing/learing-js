@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 输出所有满足下列条件的四位数.条件: 个位数字加百位数字等于千位数字加上十位数字, 且该数为奇数.
+    for (let i = 1000; i < 10000; i++) {
+      if (i % 10 + parseInt(i / 100) % 10 == parseInt(i / 10) % 10 + parseInt(i / 1000) && i % 2 != 0) {
+        console.log(i)
+      }
+    }
+  </script>
+</body>
+
+</html>

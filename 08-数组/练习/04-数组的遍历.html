@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 数组的每一个元素进行访问
+    // 1) for循环
+    // 2) for in  --es5
+    // 3) for of  --es6
+    var arr = ["z3", "l4", "w5", "z6"];
+    for (var i = 0; i < arr.length; i++) {
+      console.log(arr[i]);
+    }
+    console.log("====================")
+    for (var index in arr) {
+      console.log(arr[index])
+    }
+    console.log("====================")
+    for (var item of arr) {
+      console.log(item)
+    }
+    var arr1 = ["a", "b", "c"]
+    for (var i = 0; i < arr1.length; i++) {
+      console.log(arr1[i])
+    }
+    for (var index in arr1) {
+      console.log(index)
+    }
+    for (const item of arr1) {
+      console.log(item)
+    }
+
+
+    // 遍历对象
+
+    var obj = {
+      name: "chen",
+      age: 18,
+      height: 168
+    }
+    for (const key in obj) {
+      console.log(key, obj[key])
+    }
+
+    for (const item of obj) {
+      console.log(item)
+    }
+
+
+  </script>
+</body>
+
+</html>

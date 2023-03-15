@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+        // 总结：1）通过Number() 构造函数
+              // 2） +  -
+              // 3）parseInt  parseFloat
+              //    可以把字符串（包含空串）
+              //    true  --1  false  --0   null --0
+              //    undefined  --NaN   px123px  --NaN
+              //    123px  使用Number（） +   -   --NaN
+              //    123px  使用parseInt()  parseFloat()   --123  能转则转
+           
+
+
+        // 布尔类型转为number类型
+        var a = true ; //boolean
+        console.log(Number(a)); //1
+        console.log(typeof Number(a)); // number
+       
+        var b = false ; //boolean
+        console.log(Number(b)); //0
+        console.log(typeof Number(b)); // number
+
+        var c = false ; //boolean
+        console.log(+c); //0
+        console.log(typeof +c); // number
+
+        var d = true ; //boolean
+        console.log(-d); //-1
+        console.log(typeof -d); // number
+
+        // undefined类型转为number类型
+        var e;  //und
+        console.log(Number(e));  //NaN
+        console.log(typeof Number(e));   // number
+
+        // null类型转为number类型
+        var f = null;  //null
+        console.log(Number(f));  // 0
+        console.log(typeof Number(f));   // number
+
+
+
+       
+
+    </script>
+</body>
+</html>

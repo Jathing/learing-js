@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 将多个表达式或者值放到一起来获取到一个最终的结果
+        // &&  逻辑与
+        // ||  逻辑或
+        // !   逻辑非
+
+        // 逻辑与
+        // 结论：同时为真，返回true
+        // 1.当两个操作数 都是true  返回true
+        // 1.当两个操作数 都是false  返回fasle
+        // 1.当两个操作数 1个是false  1个是true  返回false（一假全假）
+        
+        var a = false;
+        var b = true;
+        var c = a && b;
+        console.log(c);  //false
+
+        // 逻辑或  ||
+        // 总结：两个操作数 一个为真 返回的true （一真全真）
+        // 1.两个操作数 ，只要有一个操作数为true ，整体返回true
+        // 1.两个操作数 ，都是false ，整体返回false
+        
+        var m = false;
+        var n = true;
+        console.log(m || n);//true
+
+        // 逻辑非 !取反  一元运算符
+        console.log(!true); //false
+        console.log(!false); //true
+
+        // !login 
+       
+    </script>
+</body>
+</html>

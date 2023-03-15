@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- indexOf() 从长串中找到字串 返回对应的索引值
+        includes 包含 长串中包含子串 返回值是布尔值 
+        startsWith 判断是否以什么开头 返回值是 布尔
+        endWidth 判断是否以什么结尾 返回值是 布尔值
+
+  -->
+
+  <script>
+    var str1 = "my name is chen"
+    console.log(str1.indexOf("name"))
+
+    console.log(str1.indexOf("nae"))
+
+    if (str1.indexOf("chen" !== -1)) {
+      console.log("str1中包含chen")
+    } else {
+      console.log("str1中包含chen")
+    }
+
+    // startswith endwith
+    var str2 = "my name is jiaxin"
+    console.log(str1.startsWith("my name"))
+    console.log(str1.endsWith("jiaxin"))
+
+    // repalce 替换字符串
+    console.log(str1.replace("my", "you"))
+
+    // 字符串拼接 concat
+    console.log(str1.concat(str2))
+
+    var str3 = " 我的前后有空格  "
+    console.log(str3)
+    console.log(str3.trim())
+
+    console.log(str1.split(" "))
+
+
+
+  </script>
+</body>
+
+</html>

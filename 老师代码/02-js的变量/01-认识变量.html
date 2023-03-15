@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 变量：不是一个固定的数据，是一个会变换的数据 -->
+    <!-- 变量 = 变量名 + 变量值 -->
+    <!-- 变量名：给内存空间取的一个别名 -->
+    <!-- 变量值：给内存空间存储的真实数据 -->
+    <script>
+    //  存储一个数据  Lee-->
+    // 1）在内存空间中，找到一个小空间，把Lee放在小空间中
+    // 2）当我们需要拿到这个Lee数据的时候，我们需要从内存空间中拿取
+    // 3）给内存空间取一个变量名（别名），拿到变量名，就可以对数据进行操作
+
+    // 对变量名的操作 ，本质上是对内存空间的数据进行操作
+
+    // 如何声明一个变量 var 关键字
+    // 可以通过var关键字，除了var 还可以使用 let  const （es6）
+    // = 赋值运算符
+
+
+    var name = "Lee";
+    var age = 18;
+    console.log(age);
+    // 对变量名重新赋值
+    age = 19;
+    console.log(age);
+    
+    var height = 168;
+
+    // 操作CRUD 增删改查
+    console.log(name);
+    console.log(age);
+
+
+    // 声明变量的方式
+    // 1.先声明一个变量，在赋值
+        // 1）声明变量
+        var a;
+        var b;
+        var c;
+        // 2)再给变量赋值
+        a = 1; 
+        b = 2;
+        c = 3;
+        console.log(a);
+        console.log(b);
+        console.log(c);
+
+        // 2.直接给变量声明赋值
+        var a = 1;
+        var b = 2;
+        var c = 3;
+
+        // 3.同时声明多个变量，用逗号隔开
+        var uname,age,height; 
+        uname = 'wang';
+        age = 18;
+        height = 168;
+
+
+
+
+
+       
+    </script>
+</body>
+</html>
