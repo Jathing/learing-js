@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+  <body>
+    <script>
+      //圆周率
+      console.log(Math.PI);
 
-<body>
-  <script>
-    //圆周率
-    console.log(Math.PI);
+      // floor 地板 向下取整
+      console.log(Math.floor(3.8));
 
-    // floor 地板 向下取整
-    console.log(Math.floor(3.9));
+      // ceil 天花板 向上取整
+      console.log(Math.ceil(3.01));
 
-    // ceil 天花板 向上取整
-    console.log(Math.ceil(3.1));
+      // round 环绕 四舍五入
+      console.log(Math.round(3.5));
+      console.log(Math.round(3.3));
 
-    // round 四舍五入
-    console.log(Math.round(3.5));
-    console.log(Math.round(3.3));
+      // 随机生成一个0~1的随机数 包含0 但是不包含1
+      console.log(Math.random());
 
-    // random 随机 生成一个0-1的随机数 包含0 但是不包含1
-    console.log(Math.random());
+      // 随机生成一个5~50的随机数
+      var randomNum = Math.floor(Math.random() * 45) + 5;
+      console.log(randomNum);
 
-    // 随机生成一个5-50的整数
-    var randomNum = Math.ceil(Math.random() * 45) + 5;
-    console.log(randomNum);
-
-    console.log(Math.pow(2, 4));
-  </script>
-</body>
-
+      // pow 返回x的 y次方
+      console.log(Math.pow(2,4));
+    </script>
+  </body>
 </html>
