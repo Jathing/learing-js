@@ -1,27 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+  <body>
+    <script>
+      // // 请定义一个对象 里面包含姓名，性别，年龄
+      // var obj1 = {
+      //   name: 'chen',
+      //   age: 24,
+      //   sex: '男',
+      // };
+      // var arr = [];
+      // for (let key in obj1) {
+      //   arr.push(key);
+      // }
+      // console.log(arr);
 
-<body>
-  <script>
-    // 请定义一个对象 里面包含姓名，性别，年龄
-    var obj1 = {
-      name: "chen",
-      age: 24,
-      sex: "男"
-    }
-    var arr = [];
-    for (let key in obj1) {
-      arr.push(obj1.key)
-    }
-    console.log(arr)
-  </script>
-</body>
+      // for (let key in obj1) {
+      //   arr.push(obj1[key]);
+      // }
+      // console.log(arr);
 
+      stu = [
+        { name: '张三', age: 18, id: '001' },
+        { name: '李四', age: 19, id: '002' },
+        { name: '王五', age: 20, id: '003' },
+        { name: '赵六', age: 21, id: '004' },
+      ];
+
+      function getMore20Stu(stu) {
+        return console.log(stu.filter((item) => item.age > 20));
+      }
+      getMore20Stu(stu);
+
+      function getById003(stu) {
+        return console.log(stu.find((item) => item.id == '003'));
+      }
+      getById003(stu);
+
+      function getMax_Min(stu) {
+        var max = stu[0].age;
+        var min = stu[1].age;
+        for (var i = 0; i < stu.length; i++) {
+          if (max < stu[i].age) {
+            max = stu[i].age;
+          }
+          if (min > stu[i].age) {
+            min = stu[i].age;
+          }
+        }
+
+        return stu.filter((item) => item.age == min || item.age == max);
+      }
+      console.log(getMax_Min(stu));
+    </script>
+  </body>
 </html>
